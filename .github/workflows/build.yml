@@ -8,9 +8,9 @@ jobs:
 
     steps:
     - name: zip
-      run: zip -r Glowing-OF.zip Home/Glowing/Glowing/Glowing-OF
+      run: zip -r Glowing-OF.zip -i Glowing-OF
     - name: zip
-      run: zip -r Glowing-CTM.zip Home/Glowing/Glowing/Glowing-CTM
+      run: zip -r Glowing-CTM.zip -i Glowing-CTM
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
