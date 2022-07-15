@@ -1,0 +1,19 @@
+name: CI
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: Glowing-OF
+        path: Glowing-OF
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: Glowing-CTM
+        path: Glowing-CTM
