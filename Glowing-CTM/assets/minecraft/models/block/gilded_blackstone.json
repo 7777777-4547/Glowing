@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/temp/temp_all",
+	"textures": {
+		"all_e": "block/gilded_blackstone_e",
+		"all": "block/gilded_blackstone"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/temp/temp_bottom_top",
+  "textures": {
+    "top": "minecraft:block/respawn_anchor_top_off",
+    "top_e": "minecraft:block/respawn_anchor_top_off_e",
+    "bottom": "minecraft:block/respawn_anchor_bottom",
+    "bottom_e": "minecraft:block/respawn_anchor_bottom_e",
+    "side": "minecraft:block/respawn_anchor_side0",
+    "side_e": "minecraft:block/respawn_anchor_side0_e"
+  }
+}

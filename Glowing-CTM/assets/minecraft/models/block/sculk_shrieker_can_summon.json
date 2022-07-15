@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/temp/template_sculk_shrieker",
+  "textures": {
+    "bottom": "minecraft:block/sculk_shrieker_bottom",
+    "bottom_e": "minecraft:block/sculk_shrieker_bottom_e",
+    "inner_top": "minecraft:block/sculk_shrieker_can_summon_inner_top",
+    "inner_top_e": "minecraft:block/sculk_shrieker_can_summon_inner_top_e",
+    "particle": "minecraft:block/sculk_shrieker_bottom",
+    "side": "minecraft:block/sculk_shrieker_side",
+    "side_e": "minecraft:block/sculk_shrieker_side_e",
+    "top": "minecraft:block/sculk_shrieker_top"
+  }
+}

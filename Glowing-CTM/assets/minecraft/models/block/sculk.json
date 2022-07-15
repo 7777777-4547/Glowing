@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/temp_all",
+  "textures": {
+    "all": "minecraft:block/sculk",
+    "all_e": "minecraft:block/sculk_e"
+  }
+}

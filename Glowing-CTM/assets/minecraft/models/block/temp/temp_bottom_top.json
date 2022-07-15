@@ -1,0 +1,18 @@
+{
+    "parent": "block/temp/temp",
+    "textures": {
+        "particle": "#side",
+        "down": "#bottom",
+        "up": "#top",
+        "north": "#side",
+        "east": "#side",
+        "south": "#side",
+        "west": "#side",
+        "down_e": "#bottom_e",
+        "up_e": "#top_e",
+        "north_e": "#side_e",
+        "east_e": "#side_e",
+        "south_e": "#side_e",
+        "west_e": "#side_e"
+    }
+}

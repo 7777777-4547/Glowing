@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/temp/temp_all",
+	"textures": {
+		"all": "block/deepslate_coal_ore",
+		"all_e": "block/deepslate_coal_ore_e"
+	}
+}

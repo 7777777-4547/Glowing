@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/temp/temp_column",
+  "textures": {
+    "end": "minecraft:block/target_top",
+    "end_e": "minecraft:block/target_top_on_e",
+    "side": "minecraft:block/target_side",
+    "side_e": "minecraft:block/target_side_on_e"
+  }
+}

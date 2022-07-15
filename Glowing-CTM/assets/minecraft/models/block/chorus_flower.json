@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/template_chorus_flower",
+  "textures": {
+    "texture": "minecraft:block/chorus_flower",
+    "texture_e":"minecraft:block/chorus_flower_e"
+  }
+}

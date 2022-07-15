@@ -1,0 +1,9 @@
+{
+	"parent": "block/temp/temp_column",
+	"textures": {
+		"end_e": "block/crimson_stem_top_e",
+		"end": "block/crimson_stem_top",
+		"side": "block/crimson_stem",
+		"side_e": "block/crimson_stem_e"
+	}
+}

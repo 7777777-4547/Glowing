@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/temp/temp_all",
+    "textures": {
+        "all": "block/emerald_ore",
+        "all_e": "block/emerald_ore_e"
+    }
+}
