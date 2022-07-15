@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: zip
+    - run: zip -r Glowing-OF.zip Glowing-OF
+    - run: zip -r Glowing-CTM.zip Glowing-CTM
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
