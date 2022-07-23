@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: make zip executable
-      run: chmod +x ./zip
     - name: zip
       run: zip -r Glowing-OF.zip -i libs/Glowing-OF
     - name: zip
