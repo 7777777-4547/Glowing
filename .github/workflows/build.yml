@@ -8,9 +8,9 @@ jobs:
 
     steps:
     - name: zip
-      run: zip -r Glowing-OF.zip -i libs/Glowing-OF
+      run: zip -r libs/Glowing-OF.zip Glowing-OF
     - name: zip
-      run: zip -r Glowing-CTM.zip -i libs/Glowing-CTM
+      run: zip -r libs/Glowing-CTM.zip Glowing-CTM
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
@@ -20,4 +20,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: Glowing-CTM
-        path: libs
+        path: libs/
