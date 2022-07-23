@@ -7,13 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: make zip executable
+      run: chmod +x ./zip
+    - name: zip
+      run: zip -r Glowing-OF.zip -i libs/Glowing-OF
+    - name: zip
+      run: zip -r Glowing-CTM.zip -i libs/Glowing-CTM
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
         name: Glowing-OF
-        path: /Glowing-OF
+        path: lib
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
         name: Glowing-CTM
-        path: /Glowing-CTM
+        path: libs
