@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: checkout repository
+      uses: actions/checkout@v3
     - name: zip
       run: zip -r -y libs/Glowing-OF.zip */Glowing-OF
     - name: zip
