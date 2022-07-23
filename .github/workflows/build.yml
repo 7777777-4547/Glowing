@@ -10,9 +10,9 @@ jobs:
     - name: checkout repository
       uses: actions/checkout@v3
     - name: zip
-      run: zip -r -y libs/Glowing-OF.zip */Glowing-OF
+      run: zip -r -y /home/runner/work/Glowing/Glowing/libs/Glowing-OF.zip /home/runner/work/Glowing/Glowing/Glowing-OF
     - name: zip
-      run: zip -r -y libs/Glowing-CTM.zip */Glowing-CTM
+      run: zip -r -y /home/runner/work/Glowing/Glowing/libs/Glowing-CTM.zip /home/runner/work/Glowing/Glowing/Glowing-CTM
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
