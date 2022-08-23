@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/temp_cross",
+  "textures": {
+    "cross": "minecraft:block/crimson_fungus",
+    "cross_e": "minecraft:block/crimson_fungus_e"
+  }
+}
