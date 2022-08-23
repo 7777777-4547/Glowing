@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/template_rail_raised_sw",
+  "textures": {
+    "rail": "minecraft:block/activator_rail_on",
+    "rail_e": "minecraft:block/activator_rail_on_e"
+  }
+}

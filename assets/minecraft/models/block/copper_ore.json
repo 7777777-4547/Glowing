@@ -1,0 +1,7 @@
+{
+    "parent": "block/temp/temp_all",
+    "textures": {
+        "all": "block/copper_ore",
+        "all_e": "block/copper_ore_e"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/temp_all",
+  "textures": {
+    "all": "minecraft:block/crying_obsidian",
+    "all_e":"minecraft:block/crying_obsidian_e"
+  }
+}
