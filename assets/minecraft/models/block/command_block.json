@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/temp/template_command_block",
+  "textures": {
+    "front": "minecraft:block/command_block_front",
+    "back": "minecraft:block/command_block_back",
+    "side": "minecraft:block/command_block_side",
+    "front_e": "minecraft:block/command_block_front_e",
+    "back_e": "minecraft:block/command_block_back_e",
+    "side_e": "minecraft:block/command_block_side_e"
+  }
+}

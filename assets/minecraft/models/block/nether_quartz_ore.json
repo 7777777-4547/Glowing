@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/temp/temp_all",
+    "textures": {
+        "all": "block/nether_quartz_ore",
+        "all_e": "block/nether_quartz_ore_e"
+    }
+}
