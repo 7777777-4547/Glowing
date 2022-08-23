@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/temp/temp_all",
-    "textures": {
-        "all": "block/iron_ore",
-        "all_e": "block/iron_ore_e"
-    }
-}

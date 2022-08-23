@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/temp/template_torch",
-  "textures": {
-    "torch": "minecraft:block/soul_torch",
-    "torch_e": "minecraft:block/soul_torch_e"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/temp/temp_rail_flat",
-  "textures": {
-    "rail": "minecraft:block/powered_rail_on",
-    "rail_e": "minecraft:block/powered_rail_on_e"
-  }
-}

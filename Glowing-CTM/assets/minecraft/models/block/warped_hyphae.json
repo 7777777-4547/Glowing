@@ -1,7 +1,0 @@
-{
-	"parent":"block/temp/temp_all",
-	"textures":{
-		"all":"block/warped_stem",
-		"all_e":"block/warped_stem_e"
-	}
-}

@@ -1,7 +1,0 @@
-{
-	"parent":"block/temp/temp_all",
-	"textures":{
-		"all":"block/crimson_stem",
-		"all_e":"block/crimson_stem_e"
-	}
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/temp/template_wall_torch",
-  "textures": {
-    "torch": "minecraft:block/redstone_torch",
-    "torch_e": "minecraft:block/redstone_torch_e"
-  }
-}

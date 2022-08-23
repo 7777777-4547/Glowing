@@ -1,9 +1,0 @@
-{
-	"parent": "block/temp/temp_column",
-	"textures": {
-		"end_e": "block/warped_stem_top_e",
-		"end": "block/warped_stem_top",
-		"side": "block/warped_stem",
-		"side_e": "block/warped_stem_e"
-	}
-}
