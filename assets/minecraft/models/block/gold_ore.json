@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/temp/temp_all",
+    "textures": {
+        "all": "block/gold_ore",
+        "all_e": "block/gold_ore_e"
+    }
+}

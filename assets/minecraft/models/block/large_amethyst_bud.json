@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/temp/temp_cross",
+  "textures": {
+    "cross": "minecraft:block/large_amethyst_bud",
+    "cross_e": "minecraft:block/large_amethyst_bud_e"
+  }
+}
