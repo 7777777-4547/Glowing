@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/temp/temp_all",
-    "textures": {
-        "all": "block/deepslate_redstone_ore",
-        "all_e": "block/deepslate_redstone_ore_e"
-    }
-}
