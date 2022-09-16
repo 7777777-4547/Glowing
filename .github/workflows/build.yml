@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: checkout repository
+      uses: actions/checkout@v3
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
