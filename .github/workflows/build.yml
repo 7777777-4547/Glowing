@@ -11,9 +11,9 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: Glowing-OF
-        path: libs/
+        path: Glowing-OF\
     - name: Upload build artifacts
       uses: actions/upload-artifact@v1
       with:
         name: Glowing-CTM
-        path: libs/
+        path: Glowing-CTM\
