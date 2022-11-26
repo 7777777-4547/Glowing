@@ -5,7 +5,7 @@ on:
      types:
        - published
 env:
-  version: 0.1.5.1
+  version: 0.1.5.2
 
 jobs:
   build:
@@ -35,9 +35,16 @@ jobs:
         with:
           modrinth-id: 16olY6M5
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-featured: true
 
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
           version-type: release
 
           version-resolver: latest
+
+          dependencies: |
+            ctm-refabricated | depends | *
+
+          files-primary: *.zip
+          files-secondary: *.zip
