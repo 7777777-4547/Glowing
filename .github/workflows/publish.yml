@@ -23,7 +23,7 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: "Glowing-OF_v${{ env.version }}.zip"
+          filename: "Glowing-CTM_v${{ env.version }}.zip"
           exclusions: "*.git* *.yml"
       - name: Upload Release
         uses: AButler/upload-release-assets@v2.0
@@ -36,8 +36,9 @@ jobs:
           modrinth-id: 16olY6M5
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-featured: true
-
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          
+          files-primary: 'Glowing-CTM_v${{ env.version }}.zip'
+          files-secondary: 'Glowing-CTM_v${{ env.version }}.zip'
 
           version-type: release
 
@@ -45,6 +46,3 @@ jobs:
 
           dependencies: |
             ctm-refabricated | depends | *
-
-          files-primary: '*.zip'
-          files-secondary: '*.zip'
