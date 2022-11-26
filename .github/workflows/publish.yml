@@ -40,5 +40,9 @@ jobs:
           files-primary: 'Glowing-OF_v${{ env.version }}.zip'
           files-secondary: 'Glowing-OF_v${{ env.version }}.zip'
 
+          game-versions: |
+            1.17
+            1.17.1
+
           version-type: release
           version-resolver: latest
