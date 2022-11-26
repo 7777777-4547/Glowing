@@ -46,5 +46,5 @@ jobs:
           dependencies: |
             ctm-refabricated | depends | *
 
-          files-primary: *.zip
-          files-secondary: *.zip
+          files-primary: '*.zip'
+          files-secondary: '*.zip'
