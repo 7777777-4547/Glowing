@@ -40,8 +40,12 @@ jobs:
           files-primary: 'Glowing-CTM_v${{ env.version }}-1.19.zip'
           files-secondary: 'Glowing-CTM_v${{ env.version }}-1.19.zip'
 
-          version-type: release
+          game-versions: |
+            1.19
+            1.19.1
+            1.19.2
 
+          version-type: release
           version-resolver: latest
 
           dependencies: |
