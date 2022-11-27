@@ -49,3 +49,6 @@ jobs:
 
           version-type: release
           version-resolver: latest
+          
+          dependencies: |
+            entitytexturefeatures | depends | *
