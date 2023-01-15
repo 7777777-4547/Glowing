@@ -23,7 +23,7 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: "Glowing-OF_v${{ env.version }}-1.14.zip"
+          filename: "Glowing-OF_v${{ env.version }}-1.15.zip"
           exclusions: "*.git* *.yml"
       - name: Upload Release
         uses: AButler/upload-release-assets@v2.0
@@ -37,13 +37,11 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-featured: true
           
-          files-primary: 'Glowing-OF_v${{ env.version }}-1.14.zip'
-          files-secondary: 'Glowing-OF_v${{ env.version }}-1.14.zip'
+          files-primary: 'Glowing-OF_v${{ env.version }}-1.15.zip'
+          files-secondary: 'Glowing-OF_v${{ env.version }}-1.15.zip'
 
           game-versions: |
-            1.14.2
-            1.14.3
-            1.14.4
+            1.15.2
 
           version-type: release
           version-resolver: latest
