@@ -8,10 +8,6 @@
 <br/>
   <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/2022-01-18_14.44.13.png">
 <br/>
-  <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/2021-12-30_20.18.06.png">
-<br/>
-  <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/2022-01-18_14.55.21.png">
-<br/>
   <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/2022-01-01_19.40.22.png">
 <br/>
   <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/GIF 2022-4-16 23-09-59.gif" height="325">
