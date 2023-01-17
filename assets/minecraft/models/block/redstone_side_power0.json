@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "block/redstone_dust_dot_power0",
-        "overlay": "block/redstone_dust_overlay_power0"
+        "particle": "blocks/redstone_dust_dot_power0",
+        "overlay": "blocks/redstone_dust_overlay"
     },
     "elements": [
         {   "from": [ 0, 0.25, 0 ],
