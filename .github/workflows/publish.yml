@@ -23,27 +23,31 @@ jobs:
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
-          filename: "Glowing-OF_v${{ env.version }}-1.12.zip"
+          filename: "Glowing-OF_v${{ env.version }}-1.9.zip"
           exclusions: "*.git* *.yml"
       - name: Upload Release
         uses: AButler/upload-release-assets@v2.0
         with:
           files: '*.zip'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish to Modrinth
+      - name: Publish Release
         uses: Kir-Antipov/mc-publish@v3.2
         with:
           modrinth-id: 16olY6M5
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           modrinth-featured: true
+
+          curseforge-id: 813307
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           
-          files-primary: 'Glowing-OF_v${{ env.version }}-1.12.zip'
-          files-secondary: 'Glowing-OF_v${{ env.version }}-1.12.zip'
+          files-primary: 'Glowing-OF_v${{ env.version }}-1.9.zip'
 
           game-versions: |
-            1.12
-            1.12.1
-            1.12.2
+            1.9
+            1.9.1
+            1.9.2
+            1.9.3
+            1.9.4
 
           version-type: release
           version-resolver: latest
