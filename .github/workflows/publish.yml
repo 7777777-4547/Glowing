@@ -5,7 +5,7 @@ on:
      types:
        - published
 env:
-  version: 0.1.6.1
+  version: 0.2.0
 
 jobs:
   build:
@@ -30,24 +30,24 @@ jobs:
         with:
           files: '*.zip'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish to Modrinth
-        uses: Kir-Antipov/mc-publish@v3.2
-        with:
-          modrinth-id: 16olY6M5
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          modrinth-featured: true
-          
-          files-primary: 'Glowing-OF_v${{ env.version }}-1.18.zip'
-          files-secondary: 'Glowing-OF_v${{ env.version }}-1.18.zip'
-
-          game-versions: |
-            1.18
-            1.18.1
-            1.18.2
-
-          version-type: release
-          version-resolver: latest
-          
-          dependencies: |
-            entitytexturefeatures | depends | *
-            continuity | depends | * 
+#     - name: Publish to Modrinth
+#       uses: Kir-Antipov/mc-publish@v3.2
+#       with:
+#         modrinth-id: 16olY6M5
+#         modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+#         modrinth-featured: true
+#         
+#         files-primary: 'Glowing-OF_v${{ env.version }}-1.18.zip'
+#         files-secondary: 'Glowing-OF_v${{ env.version }}-1.18.zip'
+#
+#         game-versions: |
+#           1.18
+#           1.18.1
+#           1.18.2
+#
+#         version-type: release
+#         version-resolver: latest
+#          
+#         dependencies: |
+#           entitytexturefeatures | depends | *
+#           continuity | depends | * 
