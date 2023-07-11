@@ -5,7 +5,7 @@ on:
      types:
        - published
 env:
-  version: 0.1.6.1
+  version: 0.2.0
 
 jobs:
   build:
@@ -30,24 +30,24 @@ jobs:
         with:
           files: '*.zip'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish Release
-        uses: Kir-Antipov/mc-publish@v3.2
-        with:
-          modrinth-id: 16olY6M5
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          modrinth-featured: true
-
-          curseforge-id: 813307
-          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          
-          files-primary: 'Glowing-OF_v${{ env.version }}-1.9.zip'
-
-          game-versions: |
-            1.9
-            1.9.1
-            1.9.2
-            1.9.3
-            1.9.4
-
-          version-type: release
-          version-resolver: latest
+#     - name: Publish Release
+#       uses: Kir-Antipov/mc-publish@v3.2
+#       with:
+#         modrinth-id: 16olY6M5
+#         modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+#         modrinth-featured: true
+#
+#         curseforge-id: 813307
+#         curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+#
+#         files-primary: 'Glowing-OF_v${{ env.version }}-1.9.zip'
+#
+#         game-versions: |
+#           1.9
+#           1.9.1
+#           1.9.2
+#           1.9.3
+#           1.9.4
+#
+#         version-type: release
+#         version-resolver: latest
