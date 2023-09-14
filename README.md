@@ -7,7 +7,7 @@
 [![CurseForge downloads](https://cf.way2muchnoise.eu/full_glowing_downloads.svg?badge_style=flat)](https://www.curseforge.com/minecraft/texture-packs/glowing)
 
 [![Lincense](https://img.shields.io/github/license/7777777-4547/glowing?color=blue&&label=Lincense&style=flat-square)](https://github.com/7777777-4547/Glowing/blob/img/LICENSE)
-[![Support MC Version](https://img.shields.io/badge/MC_Version-1.20.x~1.9.x-blue?style=flat-square)](https://github.com/7777777-4547/Glowing/blob/img/LICENSE)
+![Support MC Version](https://img.shields.io/badge/MC_Version-1.20.x~1.9.x-blue?style=flat-square)
 
   Use Optifine format let some blocks, items and entities glow.
   <h2>Branch</h2>
