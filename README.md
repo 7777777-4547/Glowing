@@ -28,6 +28,8 @@
   
   <h2>Showcase</h2>
 <br/>
+  <img src="https://cdn.modrinth.com/data/16olY6M5/images/c7ae364f2ee4bb67b46bfb6ade323a4e302f6225.png">
+<br/>
   <img src="./img/2022-05-27_06.55.38.png">
 <br/>
   <img src="./img/2022-01-18_13.57.42.png">
