@@ -4,7 +4,7 @@
 
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/glowing?color=00AF5C&label=Downloads&style=flat-square&logo=modrinth)](https://modrinth.com/resourcepack/glowing)
 [![GitHub Downloads](https://img.shields.io/github/downloads/7777777-4547/glowing/total?color=0D1117&label=Downloads&style=flat-square&logo=github)](https://github.com/7777777-4547/glowing)
-[![CurseForge downloads](https://cf.way2muchnoise.eu/full_glowing_downloads.svg?badge_style=flat)](https://www.curseforge.com/minecraft/texture-packs/glowing)
+[![CurseForge Downloads](https://img.shields.io/curseforge/dt/813307?style=flat-square&logo=curseforge&label=Downloads&color=F16436)](https://www.curseforge.com/minecraft/texture-packs/glowing)
 
 [![Lincense](https://img.shields.io/github/license/7777777-4547/glowing?color=blue&&label=Lincense&style=flat-square)](https://github.com/7777777-4547/Glowing/blob/img/LICENSE)
 ![Support MC Version](https://img.shields.io/badge/MC_Version-1.20.x~1.9.x-blue?style=flat-square)
