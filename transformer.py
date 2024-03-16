@@ -88,7 +88,7 @@ def main(path: str, entityMode = False):
                     invertedImage = transformLightToAlpna(image)
                     invertedImage.save(file.replace("_e.png","_e_s.png"))
 
-                print(f"{file} -> {file.replace("_e.png","_e_s.png")}")
+                print(f"{file} -> {file.replace('_e.png','_e_s.png')}")
                 
             elif file.endswith("_e.png.mcmeta"):
                 
@@ -99,7 +99,7 @@ def main(path: str, entityMode = False):
                 
                 shutil.copy2(file, file.replace("_e.png.mcmeta","_e_s.png.mcmeta"))
                 
-                print(f"{file} -> {file.replace("_e.png.mcmeta","_e_s.png.mcmeta")}")
+                print(f"{file} -> {file.replace('_e.png.mcmeta','_e_s.png.mcmeta')}")
 
 
 main("./assets/minecraft/textures/block")
