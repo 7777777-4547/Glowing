@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
       - name: Bump pack.mcmeta version
         uses: jacobtomlinson/gha-find-replace@0.1.2

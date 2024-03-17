@@ -3,6 +3,15 @@ import os
 import shutil
 
 
+class transformerLogger:
+    
+    def Logger(char):
+        print(char)
+        
+    def transformFile(rawName, newName):
+        print(f" \033[34m|\033[0m {rawName} \033[34m->\033[0m {newName}")
+
+
 def transformLightToAlpna(image: Image.Image):
 
     data = image.getdata()
@@ -61,20 +70,31 @@ def transformLightToAlpnaGlobally(image: Image.Image):
     
     return newImage
 
-
-
+        
 
 def main(path: str, entityMode = False):
     
     for root, _, files in os.walk(path):
+        
+        rootPath = root.replace("\\", "/")
+        transformerLogger.Logger(f"\n{rootPath}")
 
         for file in files:
-
-            if file.endswith("_e.png"):
+            
+            fileName = file
+            
+            emissiveSuffix = "_e"
+            shaderSuffix = "_s"
+            
+            rawSuffix = f"{emissiveSuffix}.png"
+            newSuffix = f"{emissiveSuffix}{shaderSuffix}.png"
+            
+            if file.endswith(rawSuffix):
                 
-                file = os.path.join(root, file).replace("\\", "/")
+                rawFile = os.path.join(root, file).replace("\\", "/")
+                newFile = rawFile.replace(rawSuffix, newSuffix)
                 
-                image = Image.open(file)
+                image = Image.open(rawFile)
                 width, height = image.size
                 
                 if image.mode != "RGBA":
@@ -82,25 +102,29 @@ def main(path: str, entityMode = False):
                 
                 if height//width != 1 and entityMode == False:
                     invertedImage = transformLightToAlpnaGlobally(image)
-                    invertedImage.save(file.replace("_e.png","_e_s.png"))
+                    invertedImage.save(newFile)
                     
                 else:
                     invertedImage = transformLightToAlpna(image)
-                    invertedImage.save(file.replace("_e.png","_e_s.png"))
+                    invertedImage.save(newFile)
 
-                print(f"{file} -> {file.replace('_e.png','_e_s.png')}")
+                transformerLogger.transformFile(fileName, fileName.replace(rawSuffix, newSuffix))
                 
-            elif file.endswith("_e.png.mcmeta"):
+            elif file.endswith(f"{rawSuffix}.mcmeta"):
                 
-                file = os.path.join(root, file).replace("\\", "/")
+                rawFile = os.path.join(root, file).replace("\\", "/")
+                newFile = rawFile.replace(f"{rawSuffix}.mcmeta", f"{newSuffix}.mcmeta")
                 
-                if os.path.exists(file.replace("_e.png.mcmeta","_e_s.png.mcmeta")):
-                    os.remove(file.replace("_e.png.mcmeta","_e_s.png.mcmeta"))
+                if os.path.exists(newFile):
+                    os.remove(newFile)
                 
-                shutil.copy2(file, file.replace("_e.png.mcmeta","_e_s.png.mcmeta"))
+                shutil.copy2(rawFile, newFile)
                 
-                print(f"{file} -> {file.replace('_e.png.mcmeta','_e_s.png.mcmeta')}")
+                transformerLogger.transformFile(fileName, fileName.replace(f"{rawSuffix}.mcmeta", f"{newSuffix}.mcmeta"))
+                
+                
 
+transformerLogger.Logger("\nTransformer Starting...")
 
 main("./assets/minecraft/textures/block")
 main("./assets/minecraft/textures/entity",True)
@@ -108,3 +132,5 @@ main("./assets/minecraft/textures/item")
 
 main("./assets/minecraft/textures/trims/items")
 main("./assets/minecraft/textures/trims/models",True)
+
+transformerLogger.Logger("\n\033[32m Transform Success \033[0m\n")
