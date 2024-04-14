@@ -14,6 +14,7 @@
 
   |  Optifine Format                                                  |  ConnectedTextureMod Format                                         |
   |  :-------------------------------------------------------------:  |  :---------------------------------------------------------------:  |
+  |  [24w14potato-OF](https://github.com/7777777-4547/Glowing/tree/24w14potato-OF)  |
   |  [1.20-OF](https://github.com/7777777-4547/Glowing/tree/1.20-OF)  |  
   |  [1.19-OF](https://github.com/7777777-4547/Glowing/tree/1.19-OF)  |  [1.19-CTM](https://github.com/7777777-4547/Glowing/tree/1.19-CTM)  |
   |  [1.18-OF](https://github.com/7777777-4547/Glowing/tree/1.18-OF)  |  [1.19-CTM](https://github.com/7777777-4547/Glowing/tree/1.18-CTM)  |
