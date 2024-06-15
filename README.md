@@ -9,7 +9,7 @@
 [![Lincense](https://img.shields.io/github/license/7777777-4547/glowing?color=blue&&label=Lincense&style=flat-square)](https://github.com/7777777-4547/Glowing/blob/img/LICENSE)
 ![Support MC Version](https://img.shields.io/badge/MC_Version-1.21.x~1.9.x-blue?style=flat-square)
 
-  Use Optifine/ConnectedTextureMod format let some things glow/emissive.
+  Use Optifine/ConnectedTextureMod format let some things glow or emissive for vanilla.
   <h2>Branch</h2>
 
   |  Optifine Format                                                  |  ConnectedTextureMod Format                                         |
