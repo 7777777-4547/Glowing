@@ -23,5 +23,5 @@ jobs:
               uses: Andro999b/push@v1.3
               with:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
-                message: 'change: transform default to labPBR'
+                message: 'change: Transform default to labPBR'
                 branch: ${{ github.ref_name }}

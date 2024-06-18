@@ -1,15 +1,28 @@
 from PIL import Image
 import os
 import shutil
+import hashlib
 
 
 class transformerLogger:
     
+    @staticmethod
     def Logger(char):
         print(char)
-        
+    
+    @staticmethod
     def transformFile(rawName, newName):
         print(f" \033[34m|\033[0m {rawName} \033[34m->\033[0m {newName}")
+
+def calculateFileHash(filePath: str):
+    
+    hashObj = hashlib.new("sha256")
+    
+    with open(filePath, 'rb') as file:
+        for chunk in iter(lambda: file.read(4096), b''):
+            hashObj.update(chunk)
+    
+    return hashObj.hexdigest()
 
 
 def transformLightToAlpna(image: Image.Image):
@@ -102,10 +115,20 @@ def main(path: str, entityMode = False):
                 
                 if height//width != 1 and entityMode == False:
                     invertedImage = transformLightToAlpnaGlobally(image)
+                    
+                    if os.path.exists(newFile):
+                        if invertedImage.tobytes() == Image.open(newFile).tobytes():
+                            continue
+                    
                     invertedImage.save(newFile)
                     
                 else:
                     invertedImage = transformLightToAlpna(image)
+                    
+                    if os.path.exists(newFile):
+                        if invertedImage.tobytes() == Image.open(newFile).tobytes():
+                            continue
+                    
                     invertedImage.save(newFile)
 
                 transformerLogger.transformFile(fileName, fileName.replace(rawSuffix, newSuffix))
@@ -116,6 +139,10 @@ def main(path: str, entityMode = False):
                 newFile = rawFile.replace(f"{rawSuffix}.mcmeta", f"{newSuffix}.mcmeta")
                 
                 if os.path.exists(newFile):
+                    
+                    if calculateFileHash(rawFile) == calculateFileHash(newFile):
+                        continue
+                    
                     os.remove(newFile)
                 
                 shutil.copy2(rawFile, newFile)
