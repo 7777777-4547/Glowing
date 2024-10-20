@@ -6,7 +6,7 @@
 [![GitHub Downloads via the Releases section](https://img.shields.io/github/downloads/7777777-4547/glowing/total?style=round&logo=github)](https://github.com/7777777-4547/glowing)
 [![CurseForge downloads](https://cf.way2muchnoise.eu/full_glowing_downloads.svg)](https://www.curseforge.com/minecraft/texture-packs/glowing)
 
-  Use Optifine format let some blocks, items and entities glow.
+  Use vanilla's core shaders to let some blocks, items and entities glow.
   <h2>Showcase</h2>
 <br/>
   <img src="https://raw.githubusercontent.com/7777777-4547/Glowing/img/img/2022-05-27_06.55.38.png">
