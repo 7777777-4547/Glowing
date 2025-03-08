@@ -12,9 +12,10 @@
   Use Optifine/ConnectedTextureMod format let some things glowed or emissive for vanilla.
   <h2>Branch</h2>
 
-  |  Optifine Format                                                  |  ConnectedTextureMod Format                                         |
-  |  :-------------------------------------------------------------:  |  :---------------------------------------------------------------:  |
-  |  [1.21-OF](https://github.com/7777777-4547/Glowing/tree/1.21-OF)  |  |
+  |  Optifine Format                                                  |  ConnectedTextureMod Format                                         |  Vanilla Format                                         |
+  |  :-------------------------------------------------------------:  |  :---------------------------------------------------------------:  |  :---------------------------------------------------:  |
+  |  [1.21.2-OF](https://github.com/7777777-4547/Glowing/tree/1.21.2-OF)  |
+  |  [1.21-OF](https://github.com/7777777-4547/Glowing/tree/1.21-OF)  |  |  |  [1.21.1-Vanilla](https://github.com/7777777-4547/Glowing/tree/1.21.1-Vanilla)  |
   |  [24w14potato-OF](https://github.com/7777777-4547/Glowing/tree/24w14potato-OF)  |  |
   |  [1.20-OF](https://github.com/7777777-4547/Glowing/tree/1.20-OF)  |  |
   |  [1.19-OF](https://github.com/7777777-4547/Glowing/tree/1.19-OF)  |  [1.19-CTM](https://github.com/7777777-4547/Glowing/tree/1.19-CTM)  |
