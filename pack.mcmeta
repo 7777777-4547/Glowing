@@ -2,6 +2,6 @@
    "pack":{
       "pack_format": 42,
       "supported_formats": [42, 46],
-      "description": "§eGlowing§7[OF Format]\n§6V0.4.0 §eBy 7777777_4547"
+      "description": "§eGlowing§7[OF Format]\n§6{version} §eBy 7777777_4547"
    }
 }
