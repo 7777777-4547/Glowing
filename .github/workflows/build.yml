@@ -21,11 +21,12 @@ jobs:
           chmod +x packwrapper.sh
           ./packwrapper.sh reqGen
           ./packwrapper.sh reqInstl
-      - name: Run test
+      - name: Build artifact
         run: |
           ./packwrapper.sh build
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-artifact
-          path: ./.packwrapper/package/*.zip
+          name: build-artifact
+          include-hidden-files: true
+          path: .packwrapper/package/*.zip
