@@ -1,0 +1,31 @@
+name: build-artifacts
+
+on: 
+  push:
+    branches:
+      - "multiversion"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup python 3.13
+        uses: actions/setup-python@v5
+        with:
+            python-version: 3.13
+      - name: Get & Install requirements 
+        run: |
+          chmod +x packwrapper.sh
+          ./packwrapper.sh reqGen
+          ./packwrapper.sh reqInstl
+      - name: Run test
+        run: |
+          ./packwrapper.sh build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-artifact
+          path: .packwrapper/package/*.zip

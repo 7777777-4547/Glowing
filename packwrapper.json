@@ -1,0 +1,8 @@
+{
+	"packwrapper": { "debug_mode": false },
+	"pack_info": {
+		"name": "Glowing",
+		"description": "§e${name}§7[${format}]\n§6V${version} §eBy 7777777_4547",
+		"license_path": "LICENSE"
+	}
+}
