@@ -8,6 +8,7 @@ import httpx
 
 
 file_path = Path(".packwrapper/cache/PackWrapper.zip")
+file_path.parent.mkdir(parents = True, exist_ok = True)
 
 def main(version: str = "nightly", verify: ssl.SSLContext | str | bool= True):
     
