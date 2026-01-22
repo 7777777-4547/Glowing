@@ -34,6 +34,8 @@
   
   <h2>Showcase</h2>
 <br/>
+  <img src="./img/2026-01-23_00.37.40_1609.png", width="854", height="480">
+<br/>
   <img src="./img/2023-07-11_18.22.46.png">
 <br/>
   <img src="./img/2023-11-19_16.03.55.png">
